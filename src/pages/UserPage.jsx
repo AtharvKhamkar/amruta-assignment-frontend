@@ -7,7 +7,7 @@ const UserPage = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get(`https://amruta-assignment-backend.onrender.com//user/${id}`)
+    axios.get(`https://amruta-assignment-backend.onrender.com/user/${id}`)
       .then(res => setData(res.data))
       .catch(() => alert("User not found"));
   }, [id]);
