@@ -7,7 +7,7 @@ const UserPage = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:9999/user/${id}`)
+    axios.get(`https://amruta-assignment-backend.onrender.com//user/${id}`)
       .then(res => setData(res.data))
       .catch(() => alert("User not found"));
   }, [id]);
@@ -26,7 +26,7 @@ const UserPage = () => {
       </div>
       <div className="mt-4">
         <p className="mb-2 font-semibold">Scan QR Code:</p>
-        <img src={`http://localhost:9999${data.qrPath}`} alt="QR Code" />
+        <img src={`https://amruta-assignment-backend.onrender.com/${data.qrPath}`} alt="QR Code" />
       </div>
     </div>
   );
