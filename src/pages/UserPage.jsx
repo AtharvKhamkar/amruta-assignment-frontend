@@ -26,7 +26,7 @@ const UserPage = () => {
       </div>
       <div className="mt-4">
         <p className="mb-2 font-semibold">Scan QR Code:</p>
-        <img src={`https://amruta-assignment-backend.onrender.com/${data.qrPath}`} alt="QR Code" />
+        <img src={data.qrPath} alt="QR Code" className="w-48 h-48 object-contain" />
       </div>
     </div>
   );

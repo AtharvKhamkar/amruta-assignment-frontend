@@ -27,7 +27,7 @@ const Home = () => {
 
         try {
             setLoading(true);
-            const res = await axios.post('https://amruta-assignment-backend.onrender.com/submit', data, {
+            const res = await axios.post('https://amruta-assignment-backend.onrender.com', data, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 }
